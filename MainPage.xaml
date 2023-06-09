@@ -62,10 +62,23 @@
                 PlaceholderColor="Red"/>
             </HorizontalStackLayout>
 
-            <CheckBox
-                x:Name="changeNumberSimbol"
-                CheckedChanged="onClickCheckBox"/>
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="10">
 
+                <Label
+                x:Name="pasarNegativos"
+                Text="Permitir Números Negativos"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="18"
+                HorizontalOptions="Center"
+                />
+                
+                <CheckBox
+                x:Name="changeNumberSimbol"
+                CheckedChanged="onClickCheckBox"
+                    Margin="-5"/>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
